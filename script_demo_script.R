@@ -15,5 +15,8 @@
 # get data
 sched_df <- read.csv("SchedDaysAdv.csv")
 
+# source function
+source("demoFunction.R")
+
 # get plots
 lapply(unique(sched_df$Service), doPlot)
