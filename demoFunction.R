@@ -4,8 +4,9 @@
 #
 # Author: Meghan O'Neill
 #
-# Purpose: piece of code to use in test-repo to test out GitHub and bare
-# repos on the network
+# Purpose: Piece of code to use in test-repo to test out GitHub and bare
+# repos on the network. Incidentally, it saves multiple ggplots as a list
+# and prints them.
 #
 # Demo from; 
 # http://hselab.org/content/create-sequence-plots-r-and-ggplot2-and-save-pdfs
