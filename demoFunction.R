@@ -1,4 +1,4 @@
-#-------------------------------------------------------------------------------
+# HEADER-----------------------------------------------------------------------
 #
 # Demo Function 
 #
@@ -7,10 +7,10 @@
 # Purpose: piece of code to use in test-repo to test out GitHub and bare
 # repos on the network
 #
-# Demo from; 
+# Demo code from; 
 # http://hselab.org/content/create-sequence-plots-r-and-ggplot2-and-save-pdfs
 #
-#-------------------------------------------------------------------------------
+# FUNCTION----------------------------------------------------------------------
 
 doPlot = function(svc_name) {
   # Just get the records for this service
