@@ -1,4 +1,4 @@
-#-------------------------------------------------------------------------------
+# HEADER-----------------------------------------------------------------------
 #
 # Demo Function 
 #
@@ -8,10 +8,10 @@
 # repos on the network. Incidentally, it saves multiple ggplots as a list
 # and prints them.
 #
-# Demo from; 
+# Demo code from; 
 # http://hselab.org/content/create-sequence-plots-r-and-ggplot2-and-save-pdfs
 #
-#-------------------------------------------------------------------------------
+# FUNCTION----------------------------------------------------------------------
 
 doPlot <- function(svc_name) {
   # Just get the records for this service
