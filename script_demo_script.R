@@ -18,8 +18,6 @@ require(ggplot2)
 # get data
 sched_df <- read.csv("SchedDaysAdv.csv")
 
-# Script -----------------------------------------------------------------------
-
 # remove '/' from Service in data file (causes errors)
 levels(sched_df$Service)[levels(sched_df$Service) == "Urology/GU Surgery"] <- 
   "Urology GU Surgery"
@@ -27,7 +25,9 @@ levels(sched_df$Service)[levels(sched_df$Service) == "Urology/GU Surgery"] <-
 # source function
 source("demoFunction.R")
 
-# get plots
-lapply(unique(sched_df$Service), doPlotSVC)
+# Script -----------------------------------------------------------------------
+
+# get plots, printed as pdfs and saved in list
+svc <- lapply(unique(sched_df$Service), doPlotSVC)
 
 # END --------------------------------------------------------------------------

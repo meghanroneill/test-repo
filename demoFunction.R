@@ -37,4 +37,6 @@ doPlotSVC <- function(svc_name) {
   
   # Save to PDF
   ggsave(sprintf("plot/%s.pdf", svc_name))
+  
+  return (ggobj)
 }
