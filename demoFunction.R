@@ -8,7 +8,7 @@
 # repos on the network. Incidentally, it saves multiple ggplots as a list
 # and prints them.
 #
-# Requires: Folder called "Plots" must be created in working directory
+# Requires: Folder called "Plot" must be created in working directory
 #
 # Demo code from; 
 # http://hselab.org/content/create-sequence-plots-r-and-ggplot2-and-save-pdfs
