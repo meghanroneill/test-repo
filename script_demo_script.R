@@ -7,16 +7,23 @@
 # Purpose: Script that uses demoFunction in test-repo to test out GitHub
 # and bare repos on the network
 #
-# Demo from; 
+# Demo script from; 
 # http://hselab.org/content/create-sequence-plots-r-and-ggplot2-and-save-pdfs
 #
 #-------------------------------------------------------------------------------
 
+# get library
+require(ggplot2)
+
 # get data
 sched_df <- read.csv("SchedDaysAdv.csv")
+
+# remove '/' from Service in data file (causes errors)
+levels(sched_df$Service)[levels(sched_df$Service)=="Urology/GU Surgery"] <- "Urology GU Surgery"
 
 # source function
 source("demoFunction.R")
 
 # get plots
 lapply(unique(sched_df$Service), doPlot)
+lapply(unique(sched_df$Service), doPlotSVC)
