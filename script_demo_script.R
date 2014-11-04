@@ -21,7 +21,8 @@ sched_df <- read.csv("SchedDaysAdv.csv")
 # Script -----------------------------------------------------------------------
 
 # remove '/' from Service in data file (causes errors)
-levels(sched_df$Service)[levels(sched_df$Service)=="Urology/GU Surgery"] <- "Urology GU Surgery"
+levels(sched_df$Service)[levels(sched_df$Service) == "Urology/GU Surgery"] <- 
+  "Urology GU Surgery"
 
 # source function
 source("demoFunction.R")
