@@ -25,5 +25,4 @@ levels(sched_df$Service)[levels(sched_df$Service)=="Urology/GU Surgery"] <- "Uro
 source("demoFunction.R")
 
 # get plots
-lapply(unique(sched_df$Service), doPlot)
 lapply(unique(sched_df$Service), doPlotSVC)
