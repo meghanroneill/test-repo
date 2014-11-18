@@ -8,6 +8,8 @@
 # repos on the network. Incidentally, it saves multiple ggplots as a list
 # and prints them.
 #
+# Args: svc_name
+#
 # Requires: Folder called "Plot" must be created in working directory
 #
 # Demo code from; 
